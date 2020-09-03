@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('insertForm');
-});
+Route:: view("/", "insertForm"); 
+Route:: post("/insertForm", "Validation@index");
 
-Route:: post('/insert', 'validation@index');
-/* Route:: view("/", 'validation'); */
