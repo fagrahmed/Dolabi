@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route :: get('/',function(){
-    return view ('welcome');
-});
+
+Route:: view("/registerOrLogin", "insertForm"); 
+Route:: post("/insertForm", "Validation@signUp");
 
