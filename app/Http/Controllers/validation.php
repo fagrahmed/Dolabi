@@ -34,8 +34,8 @@ class validation extends Controller
         
 
         print_r($validation);
-      //DB:: table('accounts')->insert($data);
-      $id = DB::table('accounts')->insertGetId($data);
+      DB:: table('accounts')->insert($data);
+      //$id = DB::table('accounts')->insertGetId($data);
        
     }
 
