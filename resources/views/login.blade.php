@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>  
     <head>  
-        <title>Register Here</title>
+        <title>Login Here</title>
     </head>
     <body>
     <center>  
-            <form action="/insertForm" method="POST">
+            <form action="/login" method="POST">
                 @csrf
                 <table> 
-                    <tr>    
-                        <td>Name:    </td>
-                        <td><input type="text" name="name">    </td>
-                    </tr>
                     <tr>    
                         <td>Email:    </td>
                         <td><input type="text" name="email">    </td>
@@ -19,14 +15,6 @@
                     <tr>    
                         <td>Password:    </td>
                         <td><input type="text" name="password">    </td>
-                    </tr>
-                    <tr>    
-                        <td>Confirm Password:    </td>
-                        <td><input type="text" name="cpassword">    </td>
-                    </tr>
-                    <tr>    
-                        <td>Gender:    </td>
-                        <td><input type="text" name="gender">    </td>
                     </tr>
                     <tr>    
                         <td><button type="submit">Sign Up</td>
