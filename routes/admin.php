@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route:: view("/registerOrLogin", "login"); 
-Route:: post("/login", "Validation@login");
+Route:: view("/registerOrLogin", "insertForm"); 
+Route:: post("/insertForm", "Validation@signUp");
 

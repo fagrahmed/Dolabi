@@ -17,6 +17,3 @@ Route :: get('/',function(){
     return view ('welcome');
 });
 
-/* Route:: view("/", "insertForm"); 
-Route:: post("/insertForm", "Validation@signUp");
- */

@@ -16,10 +16,8 @@ class validation extends Controller
         $name = $request->input('name');
         $email = $request->input('email');
         $password = $request->input('password');
-        $cpassword=$request->input('confirm password');
-        $gender = $request->input('gender');
 
-        $data = array('name'=>$name, 'email'=>$email, 'password'=>$password, 'gender'=>$gender);
+        $data = array('name'=>$name, 'email'=>$email, 'password'=>$password);
         
 
         foreach($data as $key=> $value) {
@@ -30,9 +28,7 @@ class validation extends Controller
          $validation= $request->validate([
             'name'=>'required | min :4 |max: 10' , 
             'email'=> 'required | email | regex:/^.+@.+$/i ',
-            'password'=> 'required | min: 4 | max :15', 
-            'cpassword'=> 'required | same:password',
-            'gender'=> 'required'
+            'password'=> 'required | min: 4 | max :15'
         ]);
         
         

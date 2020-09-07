@@ -21,14 +21,6 @@
                         <td><input type="text" name="password">    </td>
                     </tr>
                     <tr>    
-                        <td>Confirm Password:    </td>
-                        <td><input type="text" name="cpassword">    </td>
-                    </tr>
-                    <tr>    
-                        <td>Gender:    </td>
-                        <td><input type="text" name="gender">    </td>
-                    </tr>
-                    <tr>    
                         <td><button type="submit">Sign Up</td>
                     </tr>
     
